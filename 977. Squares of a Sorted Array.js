@@ -34,7 +34,6 @@ var sortedSquares = function (nums) {
      [16,1,0,9,100]
 
     time comp: O(n)
-
     space comp: O(n)
 
     */
