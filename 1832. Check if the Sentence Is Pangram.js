@@ -4,45 +4,22 @@
  */
 var checkIfPangram = function (sentence) {
     /*
-    panagram is a sentence w/ every alphabet, appearing at least once
-    given sentence - all lowercase
-    if pan
-        return true
-            else false
-
-
-    init a set:
-        key: letter
-        value: exist
-
-    sentence = sentence.split("")
-    iter thru sentence
-        if !set.has(letter)
-            add to set
-
-    size = set.size
-
-    if size of set !== 24
-        return false
-
-    else true
 
     time comp: O(n)
     space comp: O(1)
     */
-    let set = new Set()
-    for (let i = 0; i < sentence.length; i++) {
-        let letter = sentence[i]
+    let counter = 0
+    let set = new Set(nums)
 
-        if (!set.has(letter)) {
-            set.add(letter)
+
+    for(let i = 0; i <= nums.length; i++){
+        if(set.has(counter)){
+            counter++
+        }
+        else{
+            return counter
         }
     }
-    let size = set.size
 
-    if (size !== 26) {
-        return false
-    }
-
-    return true
+    return nums.size
 };
